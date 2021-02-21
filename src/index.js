@@ -7,3 +7,5 @@ function init() {
     homeButton.addEventListener('click', loadHome);
 
 }
+
+init();
