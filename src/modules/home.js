@@ -26,13 +26,10 @@ function createHomePageHeading(id) {
 function craeteCopyContent(id) {
     const copy = document.createElement('p');
     copy.setAttribute('id', id)
-    copy.textContent = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
-
+    copy.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum efficitur maximus. ' + 
+    'Nulla mollis leo dui, et volutpat nulla ultrices ac. Ut venenatis quis felis aliquam porta. ' + 
+    'Morbi eu vulputate nulla. Mauris pulvinar, urna id rhoncus tempor, enim mauris porta mi, eget' 
+    'dignissim neque magna in arcu. Curabitur convallis nunc ac sollicitudin consectetur'
     return copy;
 }
 
@@ -45,7 +42,7 @@ function addImagesToHome(className) {
     imgOne.setAttribute('class', className)
     imgOne.setAttribute('id', 'images');
 
-    imgOne.src = '../dist/images/combined-images.svg';
+    imgOne.src = '../dist/images/res_5.jpg';
 
     imgDiv.appendChild(imgOne);
 
