@@ -3,7 +3,7 @@ import loadHome from './modules/home';
 import loadMenu from './modules/menu';
 import loadContactPage from './modules/contact-us';
 
-function init() {
+const init = () => {
   pageLoad();
   loadHome();
 
@@ -15,6 +15,6 @@ function init() {
 
   const contactButton = document.getElementById('contact-tab');
   contactButton.addEventListener('click', loadContactPage);
-}
+};
 
 init();
