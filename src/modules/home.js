@@ -23,9 +23,9 @@ function createCopyContent(id) {
   const copy = document.createElement('p');
   copy.setAttribute('id', id);
   copy.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum efficitur maximus. '
-  +'Nulla mollis leo dui, et volutpat nulla ultrices ac. Ut venenatis quis felis aliquam porta. '
-  +'Morbi eu vulputate nulla. Mauris pulvinar, urna id rhoncus tempor, enim mauris porta mi, eget ' 
-  +'dignissim neque magna in arcu. Curabitur convallis nunc ac sollicitudin consectetur.';
+  + 'Nulla mollis leo dui, et volutpat nulla ultrices ac. Ut venenatis quis felis aliquam porta. '
+  + 'Morbi eu vulputate nulla. Mauris pulvinar, urna id rhoncus tempor, enim mauris porta mi, eget '
+  + 'dignissim neque magna in arcu. Curabitur convallis nunc ac sollicitudin consectetur.';
   return copy;
 }
 
@@ -41,7 +41,7 @@ function addImagesToHome(className) {
   return imgDiv;
 }
 
-function addReservationButton(className) {
+function addReservationButton() {
   const reservationButton = document.createElement('button');
   reservationButton.innerHTML = 'Make a Reservation';
   reservationButton.id = 'reservation-button';
