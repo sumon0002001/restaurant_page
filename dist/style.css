@@ -34,7 +34,7 @@
     left: 0;
     height: 15vh;
     width: 100%;
-    background-color: black;
+    background-color:rebeccapurple;
 }
 
 .heading {
@@ -45,10 +45,31 @@
 #logo {
     position: absolute;
     height: 100%;
-    width: 15%;
+    width: 10%;
     top: 0;
-    left: 5%;
+    left: 0;
 }
+
+button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: 5px 5px rgb(46, 95, 74);
+    margin-top: 2em;
+    border-radius: 12px;
+  } 
+
+   #reservation-button:hover {
+    background-color: #4CAF50; 
+    color: black;
+  }
 
 
 .tabs {
@@ -182,27 +203,29 @@ label:hover {
   background-size: 100% 0.2em;
   background-position: 0 88%;
   transition: background-size 0.25s ease-in;
-  margin-left: 10px;
+  margin-left: 25px;
+  color: rgba(96, 145, 124, 0.4);
 }
 
-#reservation-button {
-    margin-top: 2em;
-    border-radius: 0;
-    background-color: white;
-    font-family: neue-body;
-    font-size: 22px;
-    padding: 10px;
-    font-weight: 400;
-    box-shadow: 5px 5px rgb(133, 184, 163);
-    outline: none;
-    cursor: pointer;
-    border: 2px solid black;
-    width: 30%;
-}
+/* #reservation-button {
+  margin-top: 2em;
+  border-radius: 0;
+  background-color: royalblue;
+  font-family: neue-body;
+  font-size: 22px;
+  padding: 10px;
+  font-weight: 800;
+  box-shadow: 5px 5px rgb(46, 95, 74);
+  outline: none;
+  cursor: pointer;
+  border: 2px solid black;
+  width: 30%;
+} */
 
-#reservation-button:hover {
-    box-shadow: 5px 5px black;
-}
+/* #reservation-button:hover {
+    background-color: #4CAF50; 
+    color: white;
+} */
 
 
 /* Need to add transitions to screens using keyframes*/ 
