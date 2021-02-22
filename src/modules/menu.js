@@ -35,7 +35,7 @@ function loadMenu() {
   contactMenu.innerHTML = '';
   homeMenu.style.display = 'none';
   contactMenu.style.display = 'none';
-  const menuTab = document.getElementById('menuMenu'); 
+  const menuTab = document.getElementById('menuMenu');
   menuTab.innerHTML = '';
   menuTab.style.display = 'flex';
   const menuGrid = createMenu('menu-img');

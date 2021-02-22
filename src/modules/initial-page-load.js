@@ -40,7 +40,7 @@ function createMenuDiv(className, id) {
 
 function createNavAndMenus(className) {
   const nav = document.createElement('div');
-  nav.setAttribute('class', className)
+  nav.setAttribute('class', className);
   const homeLink = createNavRadio('home', 'Home');
   const menuLink = createNavRadio('menu', 'Menu');
   const contactUsLink = createNavRadio('contact-us', 'Contact Us');
@@ -74,7 +74,7 @@ function createFooter(id) {
 }
 
 function pageLoad() {
-  const content = document.querySelector('.content')
+  const content = document.querySelector('.content');
   const header = createHeader('header');
   const navBar = createNavAndMenus('tabs');
   header.appendChild(navBar);

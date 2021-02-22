@@ -66,6 +66,10 @@ button {
   border-radius: 12px;
 } 
 
+#reservation-button {
+  width: 30%;
+}
+
  #reservation-button:hover {
   background-color: #4CAF50; 
   color: black;
