@@ -1,10 +1,10 @@
-function createTextDiv(id) {
+const createTextDiv = (id) => {
   const homeMenuText = document.createElement('div');
   homeMenuText.setAttribute('id', id);
   return homeMenuText;
 }
 
-function createHomePageHeading(id) {
+const createHomePageHeading = (id) => {
   const headingDiv = document.createElement('div');
   headingDiv.className = 'heading-div';
   const heading = document.createElement('h2');
@@ -19,7 +19,7 @@ function createHomePageHeading(id) {
   return headingDiv;
 }
 
-function createCopyContent(id) {
+const createCopyContent = (id) => {
   const copy = document.createElement('p');
   copy.setAttribute('id', id);
   copy.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum efficitur maximus. '
@@ -29,7 +29,7 @@ function createCopyContent(id) {
   return copy;
 }
 
-function addImagesToHome(className) {
+const addImagesToHome = (className) => {
   const imgDiv = document.createElement('div');
   imgDiv.setAttribute('class', 'images');
   const imgOne = document.createElement('img');
@@ -41,7 +41,7 @@ function addImagesToHome(className) {
   return imgDiv;
 }
 
-function addReservationButton() {
+const addReservationButton = () => {
   const reservationButton = document.createElement('button');
   reservationButton.innerHTML = 'Make a Reservation';
   reservationButton.id = 'reservation-button';
@@ -49,7 +49,7 @@ function addReservationButton() {
   return reservationButton;
 }
 
-function loadHome() {
+const loadHome = () => {
   const menuMenu = document.getElementById('menuMenu');
   const contactMenu = document.getElementById('contactUsMenu');
   menuMenu.innerHTML = '';

@@ -1,4 +1,4 @@
-function createHeader(id) {
+const createHeader = (id) => {
   const header = document.createElement('header');
   header.setAttribute('id', id);
   const logo = document.createElement('img');
@@ -9,7 +9,7 @@ function createHeader(id) {
   return header;
 }
 
-function createNavRadio(id, text) {
+const createNavRadio = (id, text) => {
   const tab = document.createElement('input');
   tab.type = 'radio';
   tab.checked = true;
@@ -20,7 +20,7 @@ function createNavRadio(id, text) {
   return tab;
 }
 
-function createLabel(id, text) {
+const createLabel = (id, text) => {
   const label = document.createElement('label');
   label.setAttribute('for', id);
   label.innerText = text;
@@ -28,7 +28,7 @@ function createLabel(id, text) {
   return label;
 }
 
-function createMenuDiv(className, id) {
+const createMenuDiv = (className, id) => {
   const menuDiv = document.createElement('div');
   menuDiv.setAttribute('id', id);
   menuDiv.setAttribute('class', className);
@@ -38,7 +38,7 @@ function createMenuDiv(className, id) {
   return menuDiv;
 }
 
-function createNavAndMenus(className) {
+const createNavAndMenus = (className) => {
   const nav = document.createElement('div');
   nav.setAttribute('class', className);
   const homeLink = createNavRadio('home', 'Home');
@@ -66,14 +66,14 @@ function createNavAndMenus(className) {
   return nav;
 }
 
-function createFooter(id) {
+const createFooter = (id) => {
   const footer = document.createElement('footer');
   footer.setAttribute('id', id);
 
   return footer;
 }
 
-function pageLoad() {
+const pageLoad = () => {
   const content = document.querySelector('.content');
   const header = createHeader('header');
   const navBar = createNavAndMenus('tabs');

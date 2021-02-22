@@ -1,4 +1,4 @@
-function createContactCopy() {
+const createContactCopy = () => {
   const copyTextDiv = document.createElement('div');
   copyTextDiv.setAttribute('id', 'contact-copy-div');
   copyTextDiv.setAttribute('class', 'fade-in-right');
@@ -22,14 +22,14 @@ function createContactCopy() {
   return copyTextDiv;
 }
 
-function addImage() {
+const addImage = () => {
   const contactUsImg = document.createElement('img');
   contactUsImg.setAttribute('id', 'contact-img');
   contactUsImg.src = '../dist/images/res_8.jpg';
   return contactUsImg;
 }
 
-function loadContactPage() {
+const loadContactPage = () => {
   const homeMenu = document.getElementById('homeMenu');
   const menuMenu = document.getElementById('menuMenu');
   homeMenu.innerHTML = '';

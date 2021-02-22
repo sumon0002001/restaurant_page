@@ -1,4 +1,4 @@
-function createMenu(className) {
+const createMenu = (className) => {
   const parentDiv = document.createElement('div');
   parentDiv.className = 'menu-parent';
   const menu = document.createElement('img');
@@ -9,7 +9,7 @@ function createMenu(className) {
   return parentDiv;
 }
 
-function createMobileMenu() {
+const createMobileMenu = () => {
   const mobileMenuDiv = document.createElement('div');
   mobileMenuDiv.setAttribute('class', 'mobile-menu');
   const lunchMenu = document.createElement('img');
@@ -28,7 +28,7 @@ function createMobileMenu() {
   return mobileMenuDiv;
 }
 
-function loadMenu() {
+const loadMenu = () => {
   const homeMenu = document.getElementById('homeMenu');
   const contactMenu = document.getElementById('contactUsMenu');
   homeMenu.innerHTML = '';
