@@ -4,7 +4,6 @@ import loadMenu from './modules/menu';
 import loadContactPage from './modules/contact-us';
 
 function init() {
-
   pageLoad();
   loadHome();
 
