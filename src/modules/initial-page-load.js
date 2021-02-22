@@ -7,7 +7,7 @@ const createHeader = (id) => {
   header.appendChild(logo);
 
   return header;
-}
+};
 
 const createNavRadio = (id, text) => {
   const tab = document.createElement('input');
@@ -18,7 +18,7 @@ const createNavRadio = (id, text) => {
   tab.textContent = text;
 
   return tab;
-}
+};
 
 const createLabel = (id, text) => {
   const label = document.createElement('label');
@@ -26,7 +26,7 @@ const createLabel = (id, text) => {
   label.innerText = text;
 
   return label;
-}
+};
 
 const createMenuDiv = (className, id) => {
   const menuDiv = document.createElement('div');
@@ -36,7 +36,7 @@ const createMenuDiv = (className, id) => {
   menuDiv.appendChild(menuHeading);
 
   return menuDiv;
-}
+};
 
 const createNavAndMenus = (className) => {
   const nav = document.createElement('div');
@@ -64,14 +64,14 @@ const createNavAndMenus = (className) => {
   nav.appendChild(contactUsMenu);
 
   return nav;
-}
+};
 
 const createFooter = (id) => {
   const footer = document.createElement('footer');
   footer.setAttribute('id', id);
 
   return footer;
-}
+};
 
 const pageLoad = () => {
   const content = document.querySelector('.content');
@@ -81,6 +81,6 @@ const pageLoad = () => {
   content.appendChild(header);
   const footer = createFooter('footer');
   content.appendChild(footer);
-}
+};
 
 export default pageLoad;

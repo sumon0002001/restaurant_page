@@ -7,7 +7,7 @@ const createMenu = (className) => {
   parentDiv.appendChild(menu);
 
   return parentDiv;
-}
+};
 
 const createMobileMenu = () => {
   const mobileMenuDiv = document.createElement('div');
@@ -26,7 +26,7 @@ const createMobileMenu = () => {
   mobileMenuDiv.appendChild(drinksMenu);
 
   return mobileMenuDiv;
-}
+};
 
 const loadMenu = () => {
   const homeMenu = document.getElementById('homeMenu');
@@ -42,6 +42,6 @@ const loadMenu = () => {
   menuTab.appendChild(menuGrid);
   const mobileMenus = createMobileMenu();
   menuTab.appendChild(mobileMenus);
-}
+};
 
 export default loadMenu;

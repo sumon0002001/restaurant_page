@@ -2,7 +2,7 @@ const createTextDiv = (id) => {
   const homeMenuText = document.createElement('div');
   homeMenuText.setAttribute('id', id);
   return homeMenuText;
-}
+};
 
 const createHomePageHeading = (id) => {
   const headingDiv = document.createElement('div');
@@ -17,7 +17,7 @@ const createHomePageHeading = (id) => {
   headingDiv.appendChild(heading);
 
   return headingDiv;
-}
+};
 
 const createCopyContent = (id) => {
   const copy = document.createElement('p');
@@ -27,7 +27,7 @@ const createCopyContent = (id) => {
   + 'Morbi eu vulputate nulla. Mauris pulvinar, urna id rhoncus tempor, enim mauris porta mi, eget '
   + 'dignissim neque magna in arcu. Curabitur convallis nunc ac sollicitudin consectetur.';
   return copy;
-}
+};
 
 const addImagesToHome = (className) => {
   const imgDiv = document.createElement('div');
@@ -39,7 +39,7 @@ const addImagesToHome = (className) => {
   imgDiv.appendChild(imgOne);
 
   return imgDiv;
-}
+};
 
 const addReservationButton = () => {
   const reservationButton = document.createElement('button');
@@ -47,7 +47,7 @@ const addReservationButton = () => {
   reservationButton.id = 'reservation-button';
 
   return reservationButton;
-}
+};
 
 const loadHome = () => {
   const menuMenu = document.getElementById('menuMenu');
@@ -70,6 +70,6 @@ const loadHome = () => {
   textDiv.appendChild(button);
   openTab.appendChild(imgs);
   openTab.appendChild(textDiv);
-}
+};
 
 export default loadHome;

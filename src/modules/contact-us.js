@@ -20,14 +20,14 @@ const createContactCopy = () => {
   copyTextDiv.appendChild(address);
 
   return copyTextDiv;
-}
+};
 
 const addImage = () => {
   const contactUsImg = document.createElement('img');
   contactUsImg.setAttribute('id', 'contact-img');
   contactUsImg.src = '../dist/images/res_8.jpg';
   return contactUsImg;
-}
+};
 
 const loadContactPage = () => {
   const homeMenu = document.getElementById('homeMenu');
@@ -49,6 +49,6 @@ const loadContactPage = () => {
   mobileImg.src = '../dist/imgages/rooftop-bar.jpg';
 
   contactUsTab.appendChild(mobileImg);
-}
+};
 
 export default loadContactPage;
