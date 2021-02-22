@@ -7,10 +7,14 @@ function createTextDiv(id) {
 function createHomePageHeading(id) {
   const headingDiv = document.createElement('div');
   headingDiv.className = 'heading-div';
+  const heading = document.createElement('h2');
+  heading.setAttribute('id', id);
+  heading.setAttribute('class', 'heading');
   const niceUnderline = document.createElement('span');
   niceUnderline.className = 'underline--magical';
   niceUnderline.textContent = 'The Best Bangladeshi Restaurant';
   headingDiv.appendChild(niceUnderline);    
+  headingDiv.appendChild(heading);
 
   return headingDiv;
 }
@@ -40,7 +44,7 @@ function addImagesToHome(className) {
 function addReservationButton(className) {
   const reservationButton = document.createElement('button');
   reservationButton.innerHTML = 'Make a Reservation';
-  reservationButton.className = 'reservation-button';
+  reservationButton.id = 'reservation-button';
 
   return reservationButton;
 }
@@ -58,9 +62,10 @@ function loadHome() {
 
   const textDiv = createTextDiv('home-text-box');  
   const copy = createCopyContent('home-copy');
+  const heading = createHomePageHeading('home-heading');
   const imgs = addImagesToHome('home-img');
   const button = addReservationButton('reservation');
-
+  textDiv.appendChild(heading);
   textDiv.appendChild(copy);
   textDiv.appendChild(button);
   openTab.appendChild(imgs);
