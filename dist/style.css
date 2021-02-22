@@ -365,12 +365,13 @@ label:hover {
 
 #contact-us-heading {
     font-family: neue-titles;
-    font-size: 45px;
-    z-index: 2;
+    font-size: 40px;
+    z-index: 1;
+    color: cadetblue;
 }
 
 #days, #hours, #address {
-    margin-top: 3em;
+    margin-top: 1em;
     font-family: 'neue-body';
     font-size: 20px;
     z-index: 2;
@@ -479,13 +480,13 @@ label:hover {
         height: 100vh;
     }
 
-    #contact-copy-div {
+    /* #contact-copy-div {
         position: absolute;
         width: 80vw;
         left: 10%;
         right: 10%;
         text-emphasis: bold;
-    }
+    } */
 
     #contact-copy-div::before {
         content: '';
